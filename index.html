@@ -1,0 +1,79 @@
+<html>
+
+<head>
+    <meta name="description" content="this is a description" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <script defer src="/app.js"></script>
+
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Metropolis;
+            background-color: rgb(49, 46, 46);
+            color: whitesmoke;
+            font-family:sans-serif;
+        }
+        h1{
+            justify-content: center;
+            display: flex;
+        }
+        div.choices {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 200px;
+        }
+        
+        .result h1{
+            align-items: center;
+            justify-content: center;
+            display: flex;
+        }
+        
+        img {
+            width: 100px;
+            border: 2px solid rgba(0, 255, 242, 0.719);
+            border-radius: 50%;
+            padding: 5px;
+            transition: 0.3s ease-in;
+            margin: 0px 50px;
+        }
+        
+        img:hover {
+            cursor: pointer;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        }
+        .board{
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <br>
+    <h1>ROCK PAPER SCISSOR</h1>
+    <br>
+    <div class="board">
+        <h1>User: <span id="user">0</span></h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <h1>Computer: <span id="computer">0</span></h1>
+    </div>
+    <div class="choices">
+        <img src="images/rock.png" alt="rock" id="rock" />
+
+        <img src="images/paper.png" alt="paper" id="paper" />
+
+        <img src="images/sciss.png" alt="scissor" id="scissor" />
+    </div>
+    <br>
+    <div class="result">
+        <h1></h1>
+    </div>
+</body>
+
+</html>
